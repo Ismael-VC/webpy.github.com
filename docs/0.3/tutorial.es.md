@@ -24,7 +24,7 @@ Other languages : [chinese 简体中文 ](/docs/0.3/tutorial.zh-cn) | [français
 
 Así que ya sabe Python y quiere hacer una página web. web.py le provee el código necesario para hacerlo fácilmente.
 
-Si usted quiere hacer todo el tutorial, deberá tener ya instalado Python, web.py, flup, psycopg2 y Postgres (o una base de datos equivalente y su controlador de Python). (Mira la <a href="/install">instalación</a> para más detalles.)
+Si usted quiere hacer todo el tutorial, deberá tener ya instalado Python, web.py, flup, psycopg2 y Postgres (o una base de datos equivalente y su controlador de Python). (Mire la <a href="/install">instalación</a> para más detalles.)
 
 Comencemos.
 
