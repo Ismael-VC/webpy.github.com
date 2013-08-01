@@ -53,7 +53,7 @@ Esta linea dice que queremos la URL `\` (ej.: la página principal) para ser man
 ## GET y POST: la diferencia
 
 
-Ahora necesitamos escribir la clase ìndex`. Mientras que la mayoría de la gente no lo nota con tan solo navegar por ahí, su navegador usa un lenguaje conocido como HTTP para comunicarse con la World Wide Web. Los detalles no son importantes, pero la idea básica es que los visitantes le soliciten a servidores web realizar ciertas funciones (como `GET`o `POST`) en URLs (como `/` o `/foo?f=1`).
+Ahora necesitamos escribir la clase `ìndex`. Mientras que la mayoría de la gente no lo nota con tan solo navegar por ahí, su navegador usa un lenguaje conocido como HTTP para comunicarse con la World Wide Web. Los detalles no son importantes, pero la idea básica es que los visitantes le soliciten a servidores web realizar ciertas funciones (como `GET`o `POST`) en URLs (como `/` o `/foo?f=1`).
 
 `GET` es el método con el que la mayoría esta familiarizado, el que se usa para solicitar el texto de una pagina web. Cuando usted escribe `harvard.edu` dentro de su navegador web, este literalmente pregunta al servidor web de Harvard obtener `/` (`GET /`). El segundo método mas famoso, `POST`, es usado frecuentemente cuando se envían ciertas clases de formularios, como una solicitud para comprar algo. Uno usa `POST` siempre que el acto de enviar una petición _haga algo_ (como cargar a tu tarjeta de credito y procesar una orden). Esto es esencial, porque las URLs de `GET` pueden ser enviadas e indexadas por motores de búsqueda, lo cual seguramente quieres para la mayoría de tus paginas pero definitivamente _no_ para cosas como procesar ordenes (imagina si Google intentara comprar todo en tu sitio!).
 
