@@ -5,13 +5,13 @@ title: Tutorial
 
 # Tutorial
 
-Other languages : [chinese 简体中文 ](/docs/0.3/tutorial.zh-cn) | [français](/docs/0.3/tutorial.fr) | [Bahasa Indonesia](/docs/0.3/tutorial.id) | [Español](/docs/0.3/tutorial.es) | ...
+Otros lenguajes : [chinese 简体中文 ](/docs/0.3/tutorial.zh-cn) | [français](/docs/0.3/tutorial.fr) | [Bahasa Indonesia](/docs/0.3/tutorial.id) | [Español](/docs/0.3/tutorial.es) | ...
 
 ## Sumario
 
 * [Comenzando](#starting)
 * [Manejo de URLs](#urlhandling)
-* [GET and POST: the difference](#getpost)
+* [GET y POST: la diferencia](#getpost)
 * [Start the server](#start)
 * [Templating](#templating)
 * [Forms](#forms)
@@ -50,11 +50,12 @@ La primera parte es una [expresión regular](http://osteele.com/tools/rework/) q
 Esta linea dice que queremos la URL `\` (ej.: la página principal) para ser manejada por la clase llamada `index`.
 
 <a name="getpost"> </a>
-## GET and POST: the difference
+## GET y POST: la diferencia
 
-Now we need to write the `index` class. While most people don't notice it just browsing around, your browser uses a language known as HTTP for communicating with the World Wide Web. The details aren't important, but the basic idea is that Web visitors ask web servers to perform certain functions (like `GET` or `POST`) on URLs (like `/` or `/foo?f=1`).
 
-`GET` is the one we're all familiar with, the one used to request the text of a web page. When you type `harvard.edu` into your web browser, it literally asks the Harvard web server to `GET /`.  The second-most famous, `POST`, is often used when submitting certain kinds of forms, like a request to purchase something. You use `POST` whenever the act of submitting a request _does something_ (like charge your credit card and process an order). This is key, because `GET` URLs can be passed around and indexed by search engines, which you definitely want for most of your pages but definitely _don't_ want for things like processing orders (imagine if Google tried to buy everything on your site!).
+Ahora necesitamos escribir la clase ìndex`. Mientras que la mayoría de la gente no lo nota con tan solo navegar por ahí, su navegador usa un lenguaje conocido como HTTP para comunicarse con la World Wide Web. Los detalles no son importantes, pero la idea básica es que los visitantes le soliciten a servidores web realizar ciertas funciones (como `GET`o `POST`) en URLs (como `/` o `/foo?f=1`).
+
+`GET` es el método con el que la mayoría esta familiarizado, el que se usa para solicitar el texto de una pagina web. Cuando usted escribe `harvard.edu` dentro de su navegador web, este literalmente pregunta al servidor web de Harvard obtener `/` (`GET /`). El segundo método mas famoso, `POST`, es usado frecuentemente cuando se envían ciertas clases de formularios, como una solicitud para comprar algo. Uno usa `POST` siempre que el acto de enviar una petición _haga algo_ (como cargar a tu tarjeta de credito y procesar una orden). Esto es esencial, porque las URLs de `GET` pueden ser enviadas e indexadas por motores de búsqueda, lo cual seguramente quieres para la mayoría de tus paginas pero definitivamente _no_ para cosas como procesar ordenes (imagina si Google intentara comprar todo en tu sitio!).
 
 In our web.py code, we make the distinction between the two clear:
 
