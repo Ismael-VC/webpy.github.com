@@ -29,25 +29,25 @@ Si usted quiere hacer todo el tutorial, deberá tener ya instalado Python, web.p
 Comencemos.
 
 <a name="urlhandling"> </a>
-## URL Handling
+## Manejo de URLs
 
-The most important part of any website is its URL structure. Your URLs aren't just the thing that your visitors see and email to their friends, they also provide a mental model of how your website works. On popular sites like [del.icio.us](http://del.icio.us/), the URLs are even part of the user interface. web.py makes it easy to make great URLs.
+La parte más importante  de cualquier página web es la estructura de su URL. Sus URLs no son solo las cosas que los visitantes ven y mandan por email a sus amigos, también proveen un modelo mental de cómo funciona su página. En lugares populares como [del.icio.us](http://del.icio.us/), las URLs son incluso parte de la interfaz de usuario. Web.py hace fácil el crear grandiosas URLs.
 
-To get started with your web.py application, open up a new text file (let's call it `code.py`) and type:
+Para empezar con su nueva aplicación web.py, abra un nuevo archivo de texto (llamémoslo `code.py`) y escriba:
 
     import web
 
-This imports the web.py module.
+Esto importara el modulo web.py.
 
-Now we need to tell web.py our URL structure. Let's start out with something simple:
+Ahora necesitamos especificar a web.py la estructura de nuestra URL. Empecemos con algo simple:
 
     urls = (
       '/', 'index'
     )
 
-The first part is a [regular expressions](http://osteele.com/tools/rework/) that matches a URL, like `/`, `/help/faq`, `/item/(\d+)`, etc. (i.e. `\d+` would match a sequence of digits). The parentheses say to capture that piece of the matched data for use later on. The second part is the name of a class to send the request to, like `index`, `view`, `welcomes.hello` (which gets the `hello` class of the `welcomes` module), or `get_\1`. `\1` is replaced by the first capture of your regular expression; any remaining captures get passed to your function.
+La primera parte es una [expresión regular](http://osteele.com/tools/rework/) que coincide con la URL, como `\`, `/help/faq`, `/item/(\d+)`, etc. (i.e. `\d+` coincide con una secuencia de digitos). El paréntesis indica que el patrón que coincide sea guardado para ser usado mas tarde. La segunda parte es el nombre de la clase a la cual se le envía la petición, como ìndex`, `view`, `welcomes.hello` (lo cual consigue la clase `hello` del modulo `welcomes`), o `get_\1`. `\1` es reemplazado por la primera coincidencia de su expresión regular; las coincidencias sobrantes son pasadas a su función.
 
-This line says we want the URL `/` (i.e. the front page) to be handled by the class named `index`.
+Esta linea dice que queremos la URL `\` (ej: la página principal) para ser manejada por la clase llamada `index`.
 
 <a name="getpost"> </a>
 ## GET and POST: the difference
