@@ -10,7 +10,7 @@ Other languages : [chinese 简体中文 ](/docs/0.3/tutorial.zh-cn) | [français
 ## Sumario
 
 * [Comenzando](#starting)
-* [URL Handling](#urlhandling)
+* [Manejo de URLs](#urlhandling)
 * [GET and POST: the difference](#getpost)
 * [Start the server](#start)
 * [Templating](#templating)
@@ -19,11 +19,12 @@ Other languages : [chinese 简体中文 ](/docs/0.3/tutorial.zh-cn) | [français
 * [Developing](#developing)
 * [What next?](#whatnext)
 
+<a name="starting"> </a>
 ## Comenzando
 
-Así que ya sabes Python y deseas hacer una página web. web.py te provee el código necesario para hacerlo fácilmente.
+Así que ya sabe Python y quiere hacer una página web. web.py le provee el código necesario para hacerlo fácilmente.
 
-Si deseas hacer todo el tutorial, deberás tener ya instalado Python, web.py, flup, psycopg2 y Postgres (o una base de datos equivalente y su controlador de Python). (Mira la <a href="/install">instalación</a> para más detalles.)
+Si usted quiere hacer todo el tutorial, deberá tener ya instalado Python, web.py, flup, psycopg2 y Postgres (o una base de datos equivalente y su controlador de Python). (Mira la <a href="/install">instalación</a> para más detalles.)
 
 Comencemos.
 
