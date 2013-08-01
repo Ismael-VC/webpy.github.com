@@ -45,9 +45,9 @@ Ahora necesitamos especificar a web.py la estructura de nuestra URL. Empecemos c
       '/', 'index'
     )
 
-La primera parte es una [expresión regular](http://osteele.com/tools/rework/) que coincide con la URL, como `\`, `/help/faq`, `/item/(\d+)`, etc. (i.e. `\d+` coincide con una secuencia de digitos). El paréntesis indica que el patrón que coincide sea guardado para ser usado mas tarde. La segunda parte es el nombre de la clase a la cual se le envía la petición, como ìndex`, `view`, `welcomes.hello` (lo cual consigue la clase `hello` del modulo `welcomes`), o `get_\1`. `\1` es reemplazado por la primera coincidencia de su expresión regular; las coincidencias sobrantes son pasadas a su función.
+La primera parte es una [expresión regular](http://osteele.com/tools/rework/) que coincide con la URL, como `\`, `/help/faq`, `/item/(\d+)`, etc. (ej.: `\d+` coincide con una secuencia de digitos). El paréntesis indica que el patrón que coincide sea guardado para ser usado mas tarde. La segunda parte es el nombre de la clase a la cual se le envía la petición, como `ìndex`, `view`, `welcomes.hello` (lo cual consigue la clase `hello` del modulo `welcomes`), o `get_\1`. `\1` es reemplazado por la primera coincidencia de su expresión regular; las coincidencias sobrantes son pasadas a su función.
 
-Esta linea dice que queremos la URL `\` (ej: la página principal) para ser manejada por la clase llamada `index`.
+Esta linea dice que queremos la URL `\` (ej.: la página principal) para ser manejada por la clase llamada `index`.
 
 <a name="getpost"> </a>
 ## GET and POST: the difference
