@@ -13,7 +13,7 @@ Otros lenguajes : [chinese 简体中文 ](/docs/0.3/tutorial.zh-cn) | [français
 * [Manejo de URLs](#urlhandling)
 * [GET y POST: la diferencia](#getpost)
 * [Iniciar el servidor](#start)
-* [Templating](#templating)
+* [Plantillas](#templating)
 * [Forms](#forms)
 * [Databasing](#databasing)
 * [Developing](#developing)
@@ -102,14 +102,13 @@ Si accede a la linea de comandos e ingresa:
 
 Ahora usted tiene un a aplicación web.py corriendo un servidor web real en su computadora. Visite la URL y deberá ver "Hello, world!" (Puede añadir una IP dirección/puerto después de "code.py" para controlar en donde lanzara web.py el servidor. También puede indicarle si correr un servidor `fastcgi` o `scgi`.)
 
-**Note:** You can specify the port number to use on the command line like this
-if you can't or don't want to use the default:
+**Nota:** Usted puede especificar el numero de puerto en la linea de comandos si usted no puede o quiere usar el predeterminado, así:
 
     $ python code.py 1234
 
 
 <a name="templating"> </a>
-## Templating
+## Plantillas
 
 Writing HTML from inside Python can get cumbersome; it's much more fun to write Python from inside HTML. Luckily, web.py makes that pretty easy.
 
