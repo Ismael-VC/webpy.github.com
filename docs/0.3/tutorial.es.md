@@ -12,7 +12,7 @@ Otros lenguajes : [chinese 简体中文 ](/docs/0.3/tutorial.zh-cn) | [français
 * [Comenzando](#starting)
 * [Manejo de URLs](#urlhandling)
 * [GET y POST: la diferencia](#getpost)
-* [Start the server](#start)
+* [Iniciar el servidor](#start)
 * [Templating](#templating)
 * [Forms](#forms)
 * [Databasing](#databasing)
@@ -93,14 +93,14 @@ Para facilitar el acceso, aquí esta como debe verse su código:
         app.run()
 
 <a name="start"> </a>
-## Start the server
+## Iniciar el servidor
 
- If you go to your command line and type:
+Si accede a la linea de comandos e ingresa:
 
     $ python code.py
     http://0.0.0.0:8080/
 
-You now have your web.py application running a real web server on your computer. Visit that URL and you should see "Hello, world!" (You can add an IP address/port after the "code.py" bit to control where web.py launches the server. You can also tell it to run a `fastcgi` or `scgi` server.)
+Ahora usted tiene un a aplicación web.py corriendo un servidor web real en su computadora. Visite la URL y deberá ver "Hello, world!" (Puede añadir una IP dirección/puerto después de "code.py" para controlar en donde lanzara web.py el servidor. También puede indicarle si correr un servidor `fastcgi` o `scgi`.)
 
 **Note:** You can specify the port number to use on the command line like this
 if you can't or don't want to use the default:
