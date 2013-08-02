@@ -57,26 +57,26 @@ Ahora necesitamos escribir la clase `ìndex`. Mientras que la mayoría de la gen
 
 `GET` es el método con el que la mayoría esta familiarizado, el que se usa para solicitar el texto de una pagina web. Cuando usted escribe `harvard.edu` dentro de su navegador web, este literalmente pregunta al servidor web de Harvard obtener `/` (`GET /`). El segundo método mas famoso, `POST`, es usado frecuentemente cuando se envían ciertas clases de formularios, como una solicitud para comprar algo. Uno usa `POST` siempre que el acto de enviar una petición _haga algo_ (como cargar a tu tarjeta de credito y procesar una orden). Esto es esencial, porque las URLs de `GET` pueden ser enviadas e indexadas por motores de búsqueda, lo cual seguramente quieres para la mayoría de tus paginas pero definitivamente _no_ para cosas como procesar ordenes (imagina si Google intentara comprar todo en tu sitio!).
 
-In our web.py code, we make the distinction between the two clear:
+En nuestro código de web.py, haremos la distinción entre ambas explicita:
 
     class index:
         def GET(self):
             return "Hello, world!"
 
-This `GET` function will now get called by web.py anytime someone makes a `GET` request for `/`.
+Ahora esta función `GET` sera llamada por web.py cada vez que alguien haga una petición `GET`para `/`.
 
-Now we need to create an application specifying the urls and a way to tell  web.py to start serving web pages:
+Después necesitamos crear una aplicación especificando las urls y una manera de decirle a web.py que empiece a servir paginas web:
 
     if __name__ == "__main__":
         app = web.application(urls, globals())
         app.run()
 
-First we tell web.py to create an application with the URLs we listed above, looking up the classes in the global namespace of this file.
-And finally we make sure that web.py serves the application we created above.
+Primero le decimos a web.py que cree una aplicación con las URLs listadas arriba, buscando las clases en el espacio de nombres global de este archivo.
+Y finalmente nos aseguramos que web.py sirva la aplicación que creamos arriba.
 
-Now notice that although I've been talking a lot here, we only really have five or so lines of code. That's all you need to make a complete web.py application.
+Dese cuenta, aunque he estado hablando mucho, realmente solo tenemos cinco o seis lineas de código. Eso es todo lo que necesitas para hacer una aplicación web.py completa.
 
-For easier access, here's how your code should look like:
+Para facilitar el acceso, aquí esta como debe verse su código:
 
     import web
 
