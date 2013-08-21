@@ -28,3 +28,17 @@ TODO: ...
 Este tutorial asume que tanto Python como web.py están instalados en tu sistema. Si este no es el caso, por favor siga las [instrucciones de instalación] (http://webpy.org/install) antes de continuar.
 
 Además, conocimiento básico de HTML es necesario para entender algunos ejemplos.
+
+## Hola Web en web.py
+
+Abre tu editor de texto favorito y crea un nuevo archivo `hola.py`. En este archivo definirás el contenido y la lógica de tu aplicación web así como sus direcciones web (URLs).
+
+Antes de que seas capaz de usar las herramientas que web.py provee, necesitas importar el modulo web.py con el código siguiente:
+
+    import web
+    
+En web.py las páginas web son mapeadas a clases de Python. Creemos el código para la primera página que llamaremos `hola`:
+
+    class hola:
+        def GET(self):
+            return "Hola, Web!"
