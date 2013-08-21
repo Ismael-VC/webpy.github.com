@@ -45,7 +45,7 @@ En web.py las páginas web son mapeadas a clases de Python. Creemos el código p
             
 La clase `hola` tiene una función llamada `GET` (OBTENER) que retorna “¡Hola, Web!”. ¿Por qué `GET`? 
 
-Cuando abres una página web, tu navegador solicita el contenido de dicha página. Esta petición es llamada el método `GET`. Web.py usa la misma terminología. La cadena que retorna tu método `GET` es mostrada en tu navegador.
+Cuando abres una página web, tu navegador solicita el contenido de dicha página. Esta petición es llamada el método `GET`. Web.py usa la misma terminología. La string que retorna tu método `GET` es mostrada en tu navegador.
 
 Aunque el código de tu primera página está escrito, aun no puede ser abierto en un navegador. Procedamos a mapear una dirección web (URL) con tu clase. Inserta el siguiente código después de la declaración de importación:
 
@@ -58,5 +58,13 @@ Después crea un instancia de una aplicación web.py. Esta instancia será el me
 
     app = web.application(urls, globals())
 
-Nota que `web.application()` es llamada con dos argumentos. Tu mapeado de URL (`urls`) y tu espacio de nombres global el cual contiene tu clase `hola` (`globals()`).
+Nota que `web.application()` es llamada con dos argumentos. Tu mapeado de URL (`urls`) y tu namespace global el cual contiene tu clase `hola` (`globals()`).
+
+Para finalizar tu aplicación web.py inserta el siguiente código al final del código:
+
+    if __name__ == "__main__":
+        app.run()
+
+`app.run()` inicia la aplicación web para servir las paginas solicitadas.
+
 
