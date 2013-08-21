@@ -11,7 +11,7 @@ Este es un trabajo en progreso.
 
 ## TODO: '$user' vs. '$:user' y '$var user:$user' vs. '$var user:$user\'
 
-## TODO: Múltiples botones de envío 
+## TODO: Múltiples botones de envío.
 
 ## TODO: Mostrar/Esconder el código completo al final de las secciones. 
 
