@@ -15,4 +15,4 @@ Este es un trabajo en progreso.
 
 ## TODO: Mostrar/Esconder el código completo al final de las secciones. 
 
-TODO: ¿Mover el próximo párrafo para instalar? 
+## TODO: ¿Mover el próximo párrafo para instalar? 
